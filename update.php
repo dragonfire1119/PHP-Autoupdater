@@ -1,5 +1,7 @@
 <?php
 
+require_once('Unzip.php');
+
 use VIPSoft\Unzip\Unzip;
 
 /**
@@ -92,7 +94,7 @@ class Update {
     public function check() {
 
         // Get the update url data
-        $getRemoteUrl = $this->get('http://remote.dev/check.php');
+        $getRemoteUrl = $this->get('http://remote.dev/checkupdate.php');
 
         $get = json_decode($getRemoteUrl);
 
