@@ -94,7 +94,7 @@ class Update {
     public function check() {
 
         // Get the update url data
-        $getRemoteUrl = $this->get('http://remote.dev/checkupdate.php');
+        $getRemoteUrl = $this->get('http://remote.dev/check.php');
 
         $get = json_decode($getRemoteUrl);
 
